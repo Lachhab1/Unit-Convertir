@@ -36,7 +36,6 @@ main {
 		hsl(189deg 100% 44%) 83%,
 		hsl(189deg 73% 53%) 100%
 	);
-	background-size: cover;
 	background-position: center;
 	height: 40vh;
 	display: flex;
@@ -127,8 +126,9 @@ button:active {
 }
 @media (max-width: 1200px) and (min-width: 992px) {
 	.container > .upper-bloc {
+		background-size: cover;
 		height: 60vh;
-		width: 100vw;
+		width: 100%;
 	}
 	.title {
 		font-weight: 700;
@@ -138,6 +138,7 @@ button:active {
 		font-size: 2.5rem;
 		font-weight: 500;
 		margin-top: -20vh;
+		width: 10%;
 	}
 	button {
 		padding: 0.8rem 2rem;
@@ -176,6 +177,7 @@ button:active {
 		font-size: 4rem;
 		font-weight: 500;
 		margin-top: -15vh;
+		width: 30vw;
 	}
 	button {
 		padding: 0.6rem 1.8rem;
