@@ -1,0 +1,169 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Inter', sans-serif;
+}
+main {
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+}
+.upper-bloc {
+	background-image: linear-gradient(
+		315deg,
+		hsl(217deg 84% 55%) 0%,
+		hsl(209deg 100% 47%) 17%,
+		hsl(207deg 100% 47%) 25%,
+		hsl(205deg 100% 48%) 31%,
+		hsl(204deg 100% 48%) 37%,
+		hsl(202deg 100% 48%) 42%,
+		hsl(200deg 100% 47%) 47%,
+		hsl(199deg 100% 47%) 53%,
+		hsl(197deg 100% 46%) 58%,
+		hsl(195deg 100% 46%) 63%,
+		hsl(193deg 100% 45%) 69%,
+		hsl(191deg 100% 45%) 75%,
+		hsl(189deg 100% 44%) 83%,
+		hsl(189deg 73% 53%) 100%
+	);
+	background-size: cover;
+	background-position: center;
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.title,
+.unit-content {
+	color: #fff;
+}
+.title {
+	font-weight: 800;
+	font-size: 2.6rem;
+}
+input.unit-content {
+	background-color: transparent;
+	border: 0;
+	text-align: center;
+	font-size: 7rem;
+	font-weight: 500;
+	margin-top: -10vh;
+	color: #fff;
+	outline: 0;
+	position: relative;
+}
+.convertir {
+	display: flex;
+	justify-content: center;
+}
+input.unit-content::placeholder {
+	color: #fff;
+}
+button {
+	width: fit-content;
+	height: fit-content;
+	background-color: #ed4880;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 1rem 2.5rem;
+	font-size: 1.2rem;
+	opacity: .6;
+	display: flex;
+	flex-direction: flex-end;
+	align-items: center;
+	position: absolute;
+	right: 25vw;
+	top: 30vh;
+}
+button:hover {
+	opacity: 1;
+}
+button:active,
+button:hover {
+	background-image: linear-gradient(
+		45deg,
+		hsl(340deg 82% 61%) 0%,
+		hsl(328deg 73% 62%) 11%,
+		hsl(310deg 56% 62%) 22%,
+		hsl(280deg 58% 67%) 33%,
+		hsl(249deg 73% 74%) 44%,
+		hsl(223deg 89% 72%) 56%,
+		hsl(209deg 94% 65%) 67%,
+		hsl(199deg 91% 56%) 78%,
+		hsl(193deg 85% 50%) 89%,
+		hsl(189deg 73% 53%) 100%
+	);
+}
+button:active {
+	opacity: .6;
+}
+.down-block {
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.down-block .mesure-unit {
+	color: #1a1921;
+	font-size: 1.3rem;
+	margin-bottom: 1.5rem;
+	font-weight: 500;
+}
+.down-block .content-unit {
+	font-size: 2rem;
+	color: #4e4e4e;
+	font-weight: 300;
+}
+@media (max-width: 1200px;) and (min-width: 992px) {
+	.container > .upper-bloc {
+		height: 50vh;
+	}
+	.title {
+		font-weight: 700;
+		font-size: 13rem;
+	}
+	input.unit-content {
+		font-size: 3rem;
+		font-weight: 500;
+		margin-top: -30vh;
+		position: relative;
+	}
+	button {
+		padding: 0.8rem 2rem;
+		font-size: 1rem;
+		opacity: .9;
+		right: 20vw;
+		top: 30vh;
+	}
+	button:hover {
+		opacity: 1;
+	}
+	button:active {
+		background-color: #05795a;
+	}
+	.down-block {
+		height: 40vh;
+	}
+	.down-block .mesure-unit {
+		color: #1a1921;
+		font-size: 0.9rem;
+		margin-bottom: 1rem;
+		font-weight: 500;
+	}
+	.down-block .content-unit {
+		font-size: 1.5rem;
+		color: #4e4e4e;
+		font-weight: 300;
+	}
+}
