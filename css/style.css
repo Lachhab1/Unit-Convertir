@@ -125,16 +125,17 @@ button:active {
 	color: #4e4e4e;
 	font-weight: 300;
 }
-@media (max-width: 1200px;) and (min-width: 992px) {
+@media (max-width: 1200px) and (min-width: 992px) {
 	.container > .upper-bloc {
-		height: 50vh;
+		height: 60vh;
+		width: 100vw;
 	}
 	.title {
 		font-weight: 700;
-		font-size: 6rem;
+		font-size: 3rem;
 	}
 	input.unit-content {
-		font-size: 3rem;
+		font-size: 2.5rem;
 		font-weight: 500;
 		margin-top: -20vh;
 	}
@@ -143,7 +144,7 @@ button:active {
 		font-size: 1rem;
 		opacity: .9;
 		right: 25vw;
-		top: 30vh;
+		top: 45vh;
 	}
 	button:hover {
 		opacity: 1;
@@ -159,6 +160,44 @@ button:active {
 	}
 	.down-block .content-unit {
 		font-size: 1.5rem;
+		color: #4e4e4e;
+		font-weight: 300;
+	}
+}
+@media (max-width: 991px) {
+	.container > .upper-bloc {
+		height: 40vh;
+	}
+	.title {
+		font-weight: 500;
+		font-size: 1.8rem;
+	}
+	input.unit-content {
+		font-size: 4rem;
+		font-weight: 500;
+		margin-top: -15vh;
+	}
+	button {
+		padding: 0.6rem 1.8rem;
+		font-size: 1rem;
+		opacity: .9;
+		right: 42vw;
+		top: 34vh;
+	}
+	button:hover {
+		opacity: 1;
+	}
+	.down-block {
+		height: 60vh;
+	}
+	.down-block .mesure-unit {
+		color: #1a1921;
+		font-size: 0.9rem;
+		margin-bottom: 1rem;
+		font-weight: 500;
+	}
+	.down-block .content-unit {
+		font-size: 1rem;
 		color: #4e4e4e;
 		font-weight: 300;
 	}
