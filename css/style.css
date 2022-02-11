@@ -131,26 +131,22 @@ button:active {
 	}
 	.title {
 		font-weight: 700;
-		font-size: 13rem;
+		font-size: 6rem;
 	}
 	input.unit-content {
 		font-size: 3rem;
 		font-weight: 500;
-		margin-top: -30vh;
-		position: relative;
+		margin-top: -20vh;
 	}
 	button {
 		padding: 0.8rem 2rem;
 		font-size: 1rem;
 		opacity: .9;
-		right: 20vw;
+		right: 25vw;
 		top: 30vh;
 	}
 	button:hover {
 		opacity: 1;
-	}
-	button:active {
-		background-color: #05795a;
 	}
 	.down-block {
 		height: 40vh;
@@ -164,6 +160,21 @@ button:active {
 	.down-block .content-unit {
 		font-size: 1.5rem;
 		color: #4e4e4e;
+		font-weight: 300;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #121212;
+		color: #fff;
+	}
+	.down-block .mesure-unit {
+		color: #f8f8f8;
+		font-weight: 500;
+	}
+	.down-block .content-unit {
+		color: #8a86869d;
 		font-weight: 300;
 	}
 }
